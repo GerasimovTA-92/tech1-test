@@ -1,0 +1,204 @@
+{
+	"info": {
+		"_postman_id": "50006861-7b18-4345-8e9a-52086aef9e42",
+		"name": "tech1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "21460027"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": ""
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"tech1\", \"password\":\"\"}"
+				},
+				"url": "http://localhost:8080/login",
+				"description": "{\"username\":\"tech1\", \"password\":\"\"} add this json object to request"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/users/by-color?color=black",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZWNoMSIsImlhdCI6MTY1NjMxMjU1NCwiZXhwIjoxNjU2MzE2MTU0fQ.couVy111t5PatTPbRcrc0mpbiKdjHXsyXjUGfD-2Xns"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/by-color?color=black",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"by-color"
+					],
+					"query": [
+						{
+							"key": "color",
+							"value": "black"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/users/by-articles",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZWNoMSIsImlhdCI6MTY1NjMxMjU1NCwiZXhwIjoxNjU2MzE2MTU0fQ.couVy111t5PatTPbRcrc0mpbiKdjHXsyXjUGfD-2Xns"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://localhost:8080/users/by-articles"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/users/by-age-greater-than?age=18",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZWNoMSIsImlhdCI6MTY1NjMxMjU1NCwiZXhwIjoxNjU2MzE2MTU0fQ.couVy111t5PatTPbRcrc0mpbiKdjHXsyXjUGfD-2Xns"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/by-age-greater-than?age=18",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"by-age-greater-than"
+					],
+					"query": [
+						{
+							"key": "age",
+							"value": "18"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZWNoMSIsImlhdCI6MTY1NjMxMjU1NCwiZXhwIjoxNjU2MzE2MTU0fQ.couVy111t5PatTPbRcrc0mpbiKdjHXsyXjUGfD-2Xns"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Bob\", \"age\": 10}"
+				},
+				"url": "http://localhost:8080/users"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/articles",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZWNoMSIsImlhdCI6MTY1NjMxMjU1NCwiZXhwIjoxNjU2MzE2MTU0fQ.couVy111t5PatTPbRcrc0mpbiKdjHXsyXjUGfD-2Xns"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"text\": \"Test from postman\", \"userId\": 1, \"color\": \"blue\"}"
+				},
+				"url": "http://localhost:8080/articles"
+			},
+			"response": []
+		}
+	]
+}
